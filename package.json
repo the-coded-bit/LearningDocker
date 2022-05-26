@@ -1,0 +1,16 @@
+{
+  "name": "learning-docker",
+  "version": "1.0.0",
+  "description": "A playground project, **to learn about docker.**",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
