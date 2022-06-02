@@ -1,5 +1,9 @@
 version: '3.9'
 services:
+  my-app:
+    image: my-app:1.0
+    ports:
+      - 3000:3000  
   mongo-express:
     image: mongo-express
     restart: always
@@ -19,3 +23,8 @@ services:
     environment:
       - MONGO_INITDB_ROOT_USERNAME=admin
       - MONGO_INITDB_ROOT_PASSWORD=password
+    volumes:
+      - mongo-data:/data/db
+volumes:
+  mongo-data:
+    driver: local   
