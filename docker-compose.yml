@@ -13,7 +13,7 @@ services:
       - mongodb       
   mongodb :
     image : mongo
-    restart: always
+    restart: on-failure
     ports:
       - 27017:27017
     environment:
